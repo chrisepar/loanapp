@@ -7,6 +7,7 @@ Loan application is a ReactJS, ExpressJS, and PostgreSQL Application
 1. Name the database as "**loanapp**" and owner should be "**postgres**"
 2. Run the **CREATE_LOAN_TABLE.sql** under **database/transactional/schema**
 3. Verify if all the tables are created
+4. Update `.env` to your database connection (e.g. POSTGRE_USER, POSTGRE_PASSWORD)
 
 ### Option 2: via PSQL
 1. Open PSQL and login to your postgres database
@@ -24,6 +25,7 @@ CREATE DATABASE loanapp
 ```
 \i ${project directory}\database\schema\CREATE_LOAN_TABLE.sql
 ```
+4. Update `.env` to your database connection (e.g. POSTGRE_USER, POSTGRE_PASSWORD)
 
 ## Server-side Setup
 
@@ -61,6 +63,7 @@ CREATE DATABASE loanapptest
 ```
 \i ${project directory}\database\schema\INSERT_TEST_DATA.sql
 ```
+4. Update `.test.env` to your database connection (e.g. POSTGRE_USER, POSTGRE_PASSWORD)
 
 ### Running the Unit Test
 1. go to server folder - `cd server`
